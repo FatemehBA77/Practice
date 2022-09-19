@@ -1,0 +1,117 @@
+@import url("/TodoList/css/font.css");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "vazir";
+  list-style: none;
+}
+:root {
+  --primarycolor: #6d28d9;
+  --secondaryColor: #ede9fe;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #7c7c7c;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3 linear;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6;
+  --btnColor: #dfcde8;
+}
+body {
+  font-family: "vazir";
+  background-color: var(--bodyColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  cursor: pointer;
+}
+header h2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.form-container form {
+  display: flex;
+  align-items: center;
+}
+form input {
+  outline: none;
+  border: none;
+  flex: 1;
+  width: 25rem;
+  padding: 1.3rem;
+  background-color: var(--mainWhite);
+}
+form .img-btn {
+  outline: none;
+  border: none;
+  background-color: var(--mainWhite);
+  padding: 1rem;
+}
+.img-btn:hover {
+  background-color: var(--btnColor);
+  color: var(--mainWhite);
+}
+.select {
+  margin-left: 1rem;
+  position: relative;
+}
+.todo {
+  background-color: var(--secondaryColor);
+  color: var(--primarycolor);
+  display: flex;
+  align-items: center;
+  width: 28.5rem;
+  margin: 0.3rem 0;
+  transition: all 0.3s ease-in-out;
+}
+.todo-task {
+  font-weight: bold;
+  flex: 1;
+}
+.delete {
+  cursor: pointer;
+}
+.check,
+.delete {
+  display: block;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+select {
+  appearance: none;
+  color: var(--primarycolor);
+  width: 10rem;
+}
+.filter-todo,
+option {
+  background-color: var(--secondaryColor);
+  outline: none;
+  border: 1px solid var(--secondaryColor);
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.8rem;
+  color: var(--primarycolor);
+  pointer-events: none
+}

@@ -1,0 +1,23 @@
+.container {
+  padding: 5rem;
+  max-width: 440px;
+  margin: 100px auto;
+  text-align: center;
+  background-color: rgb(91, 145, 127);
+}
+.container h2 {
+  font-size: 60px;
+  color: rgb(193, 242, 242);
+}
+.container button {
+  font-size: 20px;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid rgb(91, 145, 127);
+  border-radius: 5px;
+}
+.container button:hover {
+  background-color: rgb(99, 137, 124);
+  border: 1px solid white;
+  color: white;
+}

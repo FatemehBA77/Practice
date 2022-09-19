@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/TodoList/css/style.css" />
+    <link rel="stylesheet" href="/TodoList/css/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h2>To Do List</h2>
+      </header>
+      <div class="form-container">
+        <form>
+          <input type="text" class="todo-input" />
+          <button type="submit" class="img-btn">
+            <img src="/TodoList/assets/images/Plus.svg" alt="" />
+          </button>
+        </form>
+        <div class="select">
+          <select class="filter-todo">
+            <option value="all" class="all">all</option>
+            <option value="compelet" class="compelet">compelet</option>
+            <option value="uncompelet" class="uncompelet">uncompelet</option>
+          </select>
+        </div>
+      </div>
+        <div class="todo-container">
+     <div class="todo"></div>
+    </section>
+    <script src="/TodoList/main.js"></script>
+  </body>
+</html>
